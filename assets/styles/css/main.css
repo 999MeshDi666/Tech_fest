@@ -578,6 +578,20 @@ fieldset {
   }
 }
 @media (min-width: 1200px) {
+  .head {
+    padding: 24px 0;
+  }
+  .head__image {
+    margin: 0 auto;
+    width: 480px;
+    height: 320px;
+  }
+  .head__link {
+    width: 260px;
+    padding: 16px 0;
+  }
+}
+@media (min-width: 1600px) {
   .head__image {
     margin: 0 auto;
     width: 680px;
@@ -840,9 +854,15 @@ fieldset {
   }
 }
 .footer {
-  padding: 80px 0 16px 0;
+  padding: 30px 0 16px 0;
   text-align: center;
   font-family: "MS Reference Sans Serif";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .footer__social-network-block {
   margin-bottom: 17px;
@@ -855,23 +875,7 @@ fieldset {
   font-size: 18px;
   margin: 0 17px;
 }
-.footer__navigation-block {
-  margin-bottom: 23px;
-}
-.footer__logo {
-  width: 87px;
-  height: 20px;
-  margin-bottom: 10px;
-}
-.footer__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.footer__links, .footer__copyright {
+.footer__copyright {
   font-size: 8px;
 }
 
@@ -883,26 +887,15 @@ fieldset {
   .footer__icons {
     font-size: 22px;
   }
-  .footer__list {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .footer__logo {
-    width: 120px;
-    height: 30px;
-  }
-  .footer__links, .footer__copyright {
+  .footer__copyright {
     font-size: 12px;
   }
 }
 @media (min-width: 768px) {
-  .footer__logo {
-    margin-bottom: 15px;
-  }
   .footer__icons {
     font-size: 25px;
   }
-  .footer__links, .footer__copyright {
+  .footer__copyright {
     font-size: 14px;
   }
 }
@@ -920,15 +913,19 @@ fieldset {
   }
 }
 @media (min-width: 1200px) {
-  .footer__title {
-    font-size: 26px;
+  .footer {
+    padding: 40px 0 10px 0;
   }
-  .footer__logo {
-    width: 220px;
-    height: 45px;
+  .footer__title {
+    font-size: 16px;
   }
   .footer__links {
     font-size: 20px;
+  }
+}
+@media (min-width: 1600px) {
+  .footer__title {
+    font-size: 26px;
   }
 }
 .instruction {
