@@ -1079,5 +1079,57 @@ fieldset {
     font-size: 80px;
   }
 }
+.success {
+  text-align: center;
+  padding-top: 160px;
+}
+.success__title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.success__link {
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 576px) {
+  .success__title {
+    font-size: 36px;
+  }
+  .success__subtitle {
+    font-size: 25px;
+  }
+}
+@media (min-width: 768px) {
+  .success {
+    padding-top: 180px;
+  }
+  .success__title {
+    font-size: 45px;
+  }
+  .success__subtitle {
+    font-size: 32px;
+  }
+}
+@media (min-width: 992px) {
+  .success__title {
+    font-size: 64px;
+  }
+  .success__subtitle {
+    font-size: 52px;
+  }
+}
+@media (min-width: 1200px) {
+  .success {
+    padding-top: 200px;
+  }
+  .success__title {
+    font-size: 84px;
+  }
+  .success__subtitle {
+    font-size: 64px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
