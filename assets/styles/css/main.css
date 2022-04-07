@@ -578,20 +578,6 @@ fieldset {
   }
 }
 @media (min-width: 1200px) {
-  .head {
-    padding: 24px 0;
-  }
-  .head__image {
-    margin: 0 auto;
-    width: 480px;
-    height: 320px;
-  }
-  .head__link {
-    width: 260px;
-    padding: 16px 0;
-  }
-}
-@media (min-width: 1600px) {
   .head__image {
     margin: 0 auto;
     width: 680px;
@@ -652,9 +638,6 @@ fieldset {
 }
 .form__add-teammate:active {
   color: rgba(255, 255, 255, 0.758);
-}
-.form__show-teammate {
-  display: none;
 }
 
 @media (min-width: 576px) {
@@ -817,11 +800,6 @@ fieldset {
   .form__add-teammate {
     display: none;
   }
-  .form__show-teammate {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
   .form__submit {
     height: 48px;
     margin: 26px 0 0 50px;
@@ -854,15 +832,9 @@ fieldset {
   }
 }
 .footer {
-  padding: 30px 0 16px 0;
+  padding: 80px 0 16px 0;
   text-align: center;
   font-family: "MS Reference Sans Serif";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 .footer__social-network-block {
   margin-bottom: 17px;
@@ -913,19 +885,8 @@ fieldset {
   }
 }
 @media (min-width: 1200px) {
-  .footer {
-    padding: 40px 0 10px 0;
-  }
-  .footer__title {
-    font-size: 16px;
-  }
-  .footer__links {
+  .footer__title, .footer__links {
     font-size: 20px;
-  }
-}
-@media (min-width: 1600px) {
-  .footer__title {
-    font-size: 26px;
   }
 }
 .instruction {
@@ -1014,6 +975,9 @@ fieldset {
   }
 }
 @media (min-width: 1200px) {
+  .instruction {
+    padding: 20px 0;
+  }
   .instruction__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

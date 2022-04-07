@@ -79,24 +79,6 @@
 
 @media (min-width: 1200px) {
     .head{
-        padding: 24px 0;
-        &__image{
-            margin: 0 auto;
-            width: 480px;
-            height: 320px;
-            
-        }
-        &__link{
-            width: 260px;
-            padding: 16px 0;
-        }
-        
-    } 
-}
-
-
-@media (min-width: 1600px) {
-    .head{
         &__image{
             margin: 0 auto;
             width: 680px;
@@ -110,6 +92,8 @@
         
     } 
 }
+
+
 
 
 

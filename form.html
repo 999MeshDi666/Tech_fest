@@ -50,71 +50,111 @@
         <section class="registration">
 
             <h1 class="registration__title">Регистрация на участие</h1>
-            <form action="#" method="post" class="form" id="form" name="registration_from">
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLScQvxtYBZYX-z_sPh_BICnoZJhgb_VZim6gDXg9gNTorc6_tQ/formResponse" method="post" class="form" id="form" name="registration_from">
                 <fieldset class="form__fieldset">
                     <label for="team" class="form__label">Название команды:</label>
-                    <input type="text" name="team" id="team" class="form__item" placeholder="Любое не оскорбительное" required>
+                    <input type="text" id="team" class="form__item" placeholder="Любое не оскорбительное" required>
                 </fieldset>
                 <fieldset class="form__fieldset">
                     <label for="study_place" class="form__label">Учебное заведение:</label>
-                    <input type="text" name="study_place" id="study_place" class="form__item" placeholder="Несколько учебных заведений в одно поле" required>
+                    <input type="text" id="study_place" class="form__item" placeholder="Несколько учебных заведений в одно поле" required>
                 </fieldset>
                 <fieldset class="form__fieldset">
                     <label for="sections" class="form__label">Веберите секцию:</label>
-                    <select name="sections" id="sections" class="form__item" required>
-                        <option value="fi">Финансовые иннофации</option>
-                        <option value="ds">Cybersecurity</option>
-                        <option value="ds">Data sciene</option>
-                        <option value="da">Дизайн и Анимация</option>
-                        <option value="st">Space Tech</option>
-                        <option value="rb">Robotics</option>
+                    <select  id="sections" class="form__item" required>
+                        <option value="FI">Финансовые инновации</option>
+                        <option value="CY">Cybersecurity</option>
+                        <option value="DS">Data sciene</option>
+                        <option value="DA">Дизайн и Анимация</option>
+                        <option value="ST">Space Tech</option>
+                        <option value="RB">Robotics</option>
                     </select>
                 </fieldset>
                 <fieldset class="form__fieldset">
                     <label for="participant1" class="form__label">ФИО капитана:</label>
-                    <input type="text" name="participant1" id="participant1" class="form__item" placeholder="ФИО капитана команды" required>
+                    <input type="text"  id="participant1" class="form__item" placeholder="ФИО капитана команды" required>
                 </fieldset>
                 <fieldset class="form__fieldset">
                     <label for="email" class="form__label">Почта капитана:</label>
-                    <input type="email" name="study_place" id="email" class="form__item" placeholder="Почта капитана команды" required>
+                    <input type="email" id="email" class="form__item" placeholder="Почта капитана команды" required>
                 </fieldset>
                 <fieldset class="form__fieldset">
                     <label for="tel" class="form__label">Телефон капитана:</label>
-                    <input type="tel" name="tel" id="tel" class="form__item" placeholder="телефон капитана" required>
+                    <input type="tel" id="tel" class="form__item" placeholder="телефон капитана" required>
                 </fieldset>
                 <fieldset class="form__fieldset" id="form_elem">
                     <label for="participant2" class="form__label" id="form_label">ФИО участника:</label>
-                    <input type="text" name="participant2" id="participant2" class="form__item" placeholder="ФИО участника" required>
+                    <input type="text"  id="participant2" class="form__item" placeholder="ФИО участника" required>
                 </fieldset>
                 <fieldset class="form__fieldset form__show-teammate" >
                     <label for="participant3" class="form__label" id="form_label">ФИО участника:</label>
-                    <input type="text" name="participant3" id="participant3" class="form__item" placeholder="ФИО участника" required>
+                    <input type="text" id="participant3" class="form__item" placeholder="ФИО участника" >
                 </fieldset>
                 <fieldset class="form__fieldset form__show-teammate" >
                     <label for="participant4" class="form__label" >ФИО участника:</label>
-                    <input type="text" name="participant4" id="participant4" class="form__item" placeholder="ФИО участника" required>
+                    <input type="text" id="participant4" class="form__item" placeholder="ФИО участника" >
                 </fieldset>
                 <fieldset class="form__fieldset form__show-teammate">
                     <label for="participant5" class="form__label">ФИО участника:</label>
-                    <input type="text" name="participant5" id="participant5" class="form__item" placeholder="ФИО участника" required>
+                    <input type="text" id="participant5" class="form__item" placeholder="ФИО участника" >
+                </fieldset>
+                <!-- <p class="form__add-teammate" id="add_form_elem">Добавить участника +</p> -->
+                <input type="submit" value="ОТПРАВИТЬ" class="button form__item form__submit">
+            </form>
+            <!-- <form action="https://docs.google.com/forms/d/e/1FAIpQLScQvxtYBZYX-z_sPh_BICnoZJhgb_VZim6gDXg9gNTorc6_tQ/formResponse" method="post" class="form" id="form" name="registration_from">
+                <fieldset class="form__fieldset">
+                    <label for="team" class="form__label">Название команды:</label>
+                    <input type="text" name="entry.1381807465" id="team" class="form__item" placeholder="Любое не оскорбительное" required>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <label for="study_place" class="form__label">Учебное заведение:</label>
+                    <input type="text" name="entry.689161790" id="study_place" class="form__item" placeholder="Несколько учебных заведений в одно поле" required>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <label for="sections" class="form__label">Веберите секцию:</label>
+                    <select  name="entry.277358756" id="sections" class="form__item" required>
+                        <option value="FI">Финансовые инновации</option>
+                        <option value="CY">Cybersecurity</option>
+                        <option value="DS">Data sciene</option>
+                        <option value="DA">Дизайн и Анимация</option>
+                        <option value="ST">Space Tech</option>
+                        <option value="RB">Robotics</option>
+                    </select>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <label for="participant1" class="form__label">ФИО капитана:</label>
+                    <input type="text" name="entry.964255080" id="participant1" class="form__item" placeholder="ФИО капитана команды" required>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <label for="email" class="form__label">Почта капитана:</label>
+                    <input type="email" name="entry.702140556" id="email" class="form__item" placeholder="Почта капитана команды" required>
+                </fieldset>
+                <fieldset class="form__fieldset">
+                    <label for="tel" class="form__label">Телефон капитана:</label>
+                    <input type="tel" name="entry.160789097" id="tel" class="form__item" placeholder="телефон капитана" required>
+                </fieldset>
+                <fieldset class="form__fieldset" id="form_elem">
+                    <label for="participant2" class="form__label" id="form_label">ФИО участника:</label>
+                    <input type="text"name="entry.1752364032"  id="participant2" class="form__item" placeholder="ФИО участника" required>
+                </fieldset>
+                <fieldset class="form__fieldset form__show-teammate" >
+                    <label for="participant3" class="form__label" id="form_label">ФИО участника:</label>
+                    <input type="text" name="entry.1721330725" id="participant3" class="form__item" placeholder="ФИО участника" >
+                </fieldset>
+                <fieldset class="form__fieldset form__show-teammate" >
+                    <label for="participant4" class="form__label" >ФИО участника:</label>
+                    <input type="text" name="entry.1823584633" id="participant4" class="form__item" placeholder="ФИО участника" >
+                </fieldset>
+                <fieldset class="form__fieldset form__show-teammate">
+                    <label for="participant5" class="form__label">ФИО участника:</label>
+                    <input type="text" name="entry.1726591051" id="participant5" class="form__item" placeholder="ФИО участника" >
                 </fieldset>
                 <p class="form__add-teammate" id="add_form_elem">Добавить участника +</p>
                 <input type="submit" value="ОТПРАВИТЬ" class="button form__item form__submit">
-            </form>
+            </form> -->
         </section>
         <footer class="footer">
-            <!-- <div class="footer__navigation-block">
-                <a href="./index.html"><img src="./assets/images/techfest_neon_logo.png" alt="TECH_FEST_logo" class="footer__logo footer__logo_size"></a>
-                <nav class="footer__navigation">
-                    <ul class="footer__list">
-                        <li><a href="./index.html" class="footer__links">Главная</a></li>
-                        <li><a href="#" class="footer__links">Инструкция</a></li>
-                        <li><a href="#" class="footer__links">Расписание</a></li>
-                        <li><a href="#" class="footer__links">Секции</a></li>
-                        <li><a href="./form.html" class="footer__links">Регистрация</a></li>
-                    </ul>
-                </nav>
-            </div> -->
+            
             <div class="footer__social-network-block">
                 <h2 class="footer__title">Следите за новостями в социальных сетях</h2>
                 <div class="footer__social-networks">
