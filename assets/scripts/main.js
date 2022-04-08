@@ -5,6 +5,18 @@ showOverlay.forEach((showOverlay) => {
         overlay.classList.toggle('overlay_show')});
 });
 
+window.onscroll = function() {stickyHeader()};
+
+let header = document.querySelector('header');
+let sticky = header.offsetTop;
+function stickyHeader(){
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+        
+      } else {
+        header.classList.remove("sticky");
+      }
+}
 
 
 // let showOverlay = document.getElementById('show_overlay');

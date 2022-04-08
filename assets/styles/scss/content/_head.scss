@@ -17,27 +17,9 @@
         margin: 0 auto;
         padding: 15px 0;
         border-radius: 20px;
-
-        // background: none;
-        // border: 1px solid $wt;
-        // color: rgba(255, 255, 255, 0.945);
-        // transition: 1s;
-
-        // &:hover{
-        //     color: $bc;
-        //     box-shadow: 0px 0px 50px 30px rgba(255, 255, 255, 0.2);
-        //     // box-shadow: 0 0 5px rgba(255, 255, 255, 0.2),
-        //     //             0 0 25px rgba(255, 255, 255, 0.2),
-        //     //             0 0 50px rgba(255, 255, 255, 0.2),
-        //     //             0 0 200px rgba(255, 255, 255, 0.2);
-        // }
-
        
     }
-
-  
 }
-
 @media (min-width: 576px) {
     .head{
         // padding: 60px 0;
@@ -47,20 +29,15 @@
             border-radius: 50px;
             font-size: 20px;
         }
-    
-
     } 
 }
 
 
 @media (min-width: 768px) {
     .head{
-        
         &__image{
             margin-bottom: 60px;
-            
         }
-         
     } 
 }
 
