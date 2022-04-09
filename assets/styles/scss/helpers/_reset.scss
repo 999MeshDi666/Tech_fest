@@ -70,6 +70,108 @@ fieldset{
     padding: 0 30px;
 }
 
+.title-block{
+    margin-bottom: 20px;
+    &__subtitle{
+        text-transform: uppercase;
+        font-size: 8px;
+        margin-bottom: 12px;
+        font-weight: 400;
+
+    }
+    &__title{
+        font-size: 20px;
+    }
+}
+
+.info{
+    &__title{
+        font-size: 14px;
+        margin-bottom: 10px;
+        &::after{
+            content: " ";
+            display: block;
+            margin-top: 10px;
+            background-color: rgba(255, 255, 255, 0.521);
+            width: 244px;
+            height: 1px;
+        }
+    }
+    &__text{
+        font-size: 8px;
+        text-align: justify;
+        line-height: 18px;
+        text-transform: uppercase;
+    }
+    
+}
+
+.criteria{
+    margin-top: 14px;
+
+    &__title{
+        font-size: 10px;
+        margin-bottom: 8px;
+    }
+    &__title,
+    &__list-item{
+        text-transform: uppercase;
+    }
+    &__list{
+        padding-left: 11px;
+        font-size: 8px;
+        font-weight: bold;
+    }
+    &__list-item{
+        list-style-type: square;
+        margin-bottom: 5px;
+        line-height: 18px;
+        text-align: justify;
+        
+    }
+    &__list-item_long-text{
+        margin-bottom: 10px;
+
+        
+    }
+
+    &__list-title{
+        margin-top: 6px;
+    }
+    &__sublist{
+        padding-left: 11px;
+    }
+    &__sublist-item{
+        margin-top: 6px;
+        list-style-type: square;
+    }
+}
+
+
+.warning{
+    margin-top: 14px;
+    &__text,
+    &__list{
+        font-size: 8px;
+        line-height: 18px;
+        text-transform: uppercase;
+        text-align: justify;
+    }
+
+    &__text{
+        font-weight: bold;
+    }
+    &__list{
+        padding-left: 11px;
+    }
+    &__list-item{
+        list-style-type: decimal;
+    }
+}
+
+
+
+
 
 @media (min-width: 992px) {
     .container{

@@ -8,12 +8,14 @@
 @import './helpers/fonts';
 @import './helpers/vars';
 @import './helpers/reset';
+@import './helpers/addintional/er-404';
+@import './helpers/addintional/success';
 @import './content/header';
 @import './content/head';
 @import './content/form';
 @import './content/footer';
 @import './content/instruction';
 @import './content/schedule';
-@import './helpers/addintional/er-404';
-@import './helpers/addintional/success';
-@import './helpers/addintional/background';
+@import './content/sections'
+
+
