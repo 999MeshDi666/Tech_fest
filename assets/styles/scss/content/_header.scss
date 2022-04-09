@@ -1,6 +1,7 @@
 .header{
     padding: 12px 0;
     background-color: $bc;
+   
     
     &__wrapper{
         justify-content: space-between;
@@ -79,6 +80,7 @@
     width: 100%;
     box-sizing: border-box;
     z-index: 1;
+    
 }
 
 

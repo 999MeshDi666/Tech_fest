@@ -43,8 +43,6 @@
 
 @media (min-width: 992px) {
     .head{
-
-
         &__link{
             width: 380px;
             padding: 21px 0;
@@ -60,9 +58,9 @@
             margin: 0 auto;
             width: 680px;
             height: 420px;
-            
         }
         &__link{
+            margin-top: 30px;
             width: 280px;
             padding: 21px 0;
         }
