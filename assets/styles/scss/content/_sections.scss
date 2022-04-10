@@ -1,8 +1,61 @@
 .sections{
     padding: 34px 0;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+    }
 
    &__topics{
        margin-bottom: 30px;
    }
+   &__additional{
+        display: block
+   }
+//    &__additional-shown{
+//        display: block;
+//    }
+
+   &__detailed{
+
+       margin-top: 10px;
+       font-size: 10px;
+       text-transform: uppercase;
+       font-weight: bold;
+       cursor: pointer;
+       &:hover{
+           color: rgba(255, 255, 255, 0.886);
+       }
+       &:active{
+        color: rgba(255, 255, 255, 0.784);
+    }
+   }
+       
+
+}
   
+
+
+
+@media (min-width: 576px) {
+    .sections{
+        &__detailed{
+            margin-top: 20px;
+        }
+    }
+    
+}
+
+
+@media (min-width: 992px) {
+  
+    .sections{
+        &__topics{
+            margin-bottom: 46px;
+        }
+        &__detailed{
+            margin-top: 20px;
+            font-size: 12px;
+        }
+    }
+    
 }

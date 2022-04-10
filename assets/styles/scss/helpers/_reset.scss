@@ -106,6 +106,7 @@ fieldset{
     
 }
 
+
 .criteria{
     margin-top: 14px;
 
@@ -171,12 +172,94 @@ fieldset{
 
 
 
+@media (min-width: 567px){
+    .title-block{
+        &__subtitle{
+            font-size: 10px;
+        }
+        &__title{
+            font-size: 25px;
+        }
 
+    }
+    .warning{
+        margin-top: 20px;
+        &__text,
+        &__list{
+            font-size: 18px;
+           
+        }
+
+    }
+    .info{
+        &__title{
+            font-size: 18px;
+            &::after{
+                width: 430px;
+            }
+        }
+        &__text{
+            font-size: 12px;
+        }
+    }
+    .criteria{
+        margin-top: 20px;
+        &__title{
+            font-size: 14px;
+        }
+        &__list{
+            padding-left: 13px;
+            font-size: 12px;
+            
+        }
+
+    }
+    
+
+}
+
+@media (min-width: 768px){
+    
+
+}
+
+    
 
 @media (min-width: 992px) {
     .container{
         padding: 0 60px ;
     };
+    .title-block{
+        &__subtitle{
+            font-size: 12px;
+        }
+        &__title{
+            font-size: 32px;
+        }
+
+    }
+    .warning{
+        margin-top: 20px;
+        &__text,
+        &__list{
+            font-size: 14px;
+            line-height: 25px;
+        }
+
+    }
+    .info{
+        &__title{
+            font-size: 20px;
+            &::after{
+                width: 750px;
+            }
+        }
+        &__text{
+            font-size: 14px;
+            line-height: 25px;
+        }
+    }
+    
 }
 
 @media (min-width: 1200px) {

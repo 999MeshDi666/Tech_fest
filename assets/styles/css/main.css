@@ -413,9 +413,71 @@ fieldset {
   list-style-type: decimal;
 }
 
+@media (min-width: 567px) {
+  .title-block__subtitle {
+    font-size: 10px;
+  }
+  .title-block__title {
+    font-size: 25px;
+  }
+
+  .warning {
+    margin-top: 20px;
+  }
+  .warning__text, .warning__list {
+    font-size: 18px;
+  }
+
+  .info__title {
+    font-size: 18px;
+  }
+  .info__title::after {
+    width: 430px;
+  }
+  .info__text {
+    font-size: 12px;
+  }
+
+  .criteria {
+    margin-top: 20px;
+  }
+  .criteria__title {
+    font-size: 14px;
+  }
+  .criteria__list {
+    padding-left: 13px;
+    font-size: 12px;
+  }
+}
 @media (min-width: 992px) {
   .container {
     padding: 0 60px;
+  }
+
+  .title-block__subtitle {
+    font-size: 12px;
+  }
+  .title-block__title {
+    font-size: 32px;
+  }
+
+  .warning {
+    margin-top: 20px;
+  }
+  .warning__text, .warning__list {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .info__title {
+    font-size: 20px;
+  }
+  .info__title::after {
+    width: 750px;
+  }
+  .info__text {
+    font-size: 14px;
+    line-height: 25px;
   }
 }
 @media (min-width: 1200px) {
@@ -1217,8 +1279,51 @@ fieldset {
 .sections {
   padding: 34px 0;
 }
+.sections__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .sections__topics {
   margin-bottom: 30px;
+}
+.sections__additional {
+  display: block;
+}
+.sections__detailed {
+  margin-top: 10px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+.sections__detailed:hover {
+  color: rgba(255, 255, 255, 0.886);
+}
+.sections__detailed:active {
+  color: rgba(255, 255, 255, 0.784);
+}
+
+@media (min-width: 576px) {
+  .sections__detailed {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .sections__topics {
+    margin-bottom: 46px;
+  }
+  .sections__detailed {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+}
+.about__info {
+  margin-bottom: 40px;
 }
 
 /*# sourceMappingURL=main.css.map */
