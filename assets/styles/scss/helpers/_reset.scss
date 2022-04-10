@@ -107,6 +107,29 @@ fieldset{
 }
 
 
+
+.warning{
+    margin-top: 14px;
+    &__text,
+    &__list{
+        font-size: 8px;
+        line-height: 18px;
+        text-transform: uppercase;
+        text-align: justify;
+    }
+
+    &__text{
+        font-weight: bold;
+    }
+    &__list{
+        padding-left: 11px;
+    }
+    &__list-item{
+        list-style-type: decimal;
+    }
+}
+
+
 .criteria{
     margin-top: 14px;
 
@@ -149,29 +172,6 @@ fieldset{
 }
 
 
-.warning{
-    margin-top: 14px;
-    &__text,
-    &__list{
-        font-size: 8px;
-        line-height: 18px;
-        text-transform: uppercase;
-        text-align: justify;
-    }
-
-    &__text{
-        font-weight: bold;
-    }
-    &__list{
-        padding-left: 11px;
-    }
-    &__list-item{
-        list-style-type: decimal;
-    }
-}
-
-
-
 @media (min-width: 567px){
     .title-block{
         &__subtitle{
@@ -187,6 +187,7 @@ fieldset{
         &__text,
         &__list{
             font-size: 18px;
+            line-height: 25px;
            
         }
 
@@ -195,11 +196,12 @@ fieldset{
         &__title{
             font-size: 18px;
             &::after{
-                width: 430px;
+                width: 490px;
             }
         }
         &__text{
             font-size: 12px;
+            line-height: 25px;
         }
     }
     .criteria{
@@ -212,16 +214,35 @@ fieldset{
             font-size: 12px;
             
         }
-        &__sublist-item{
-            margin-top: 13px;
-           
+        &__sublist{
+            padding-left: 13px;
+        }
+        &__list-item{
+            line-height: 25px;
         }
 
     }
     
 
 }
+  
+@media (min-width:768px) {
     
+    .info{
+        &__title{
+            &::after{
+                width: 680px;
+            }
+        }
+       
+    }
+    .criteria{
+        &__list-item{
+            margin-bottom: 8px;
+        }
+
+    } 
+}
 
 @media (min-width: 992px) {
     .container{
@@ -242,7 +263,6 @@ fieldset{
         &__text,
         &__list{
             font-size: 14px;
-            line-height: 25px;
         }
 
     }
@@ -250,12 +270,12 @@ fieldset{
         &__title{
             font-size: 20px;
             &::after{
-                width: 750px;
+                width: 840px;
             }
         }
         &__text{
             font-size: 14px;
-            line-height: 25px;
+            
         }
     }
     
@@ -267,19 +287,15 @@ fieldset{
         width: 1140px;
         margin: 0 auto;
     }
-
-
     .title-block{
         &__title{
             font-size: 36px;
         }
-
     }
     .warning{
-        margin-top: 20px;
+       
         &__text,
         &__list{
-            font-size: 14px;
             line-height: 30px;
         }
 
@@ -288,13 +304,31 @@ fieldset{
         &__title{
             font-size: 25px;
             &::after{
-                width: 440px;
+                width: 480px;
             }
         }
         &__text{
-            font-size: 14px;
             line-height: 30px;
         }
+    }
+    .criteria{
+        margin-top: 20px;
+        &__title{
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+        &__list{
+            padding-left: 16px;
+            
+        }
+        &__list-item{
+            line-height: 30px; 
+        }
+        &__sublist{
+            padding-left: 16px;
+        }
+
+
     }
     
 }
