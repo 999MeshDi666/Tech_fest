@@ -687,6 +687,7 @@ fieldset {
   right: 0;
   background-color: #000;
   display: none;
+  overflow: hidden;
 }
 .header__navigation {
   text-align: right;
@@ -865,6 +866,14 @@ fieldset {
   margin: 0 auto;
   padding: 15px 0;
   border-radius: 20px;
+  background: none;
+  border: 1px solid #fff;
+  color: rgba(255, 255, 255, 0.945);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.head__link:hover {
+  color: #000;
 }
 
 @media (min-width: 576px) {
