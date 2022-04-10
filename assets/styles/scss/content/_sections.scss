@@ -1,19 +1,15 @@
 .sections{
     padding: 34px 0;
-    &__wrapper{
-        display: flex;
-        flex-direction: column;
-    }
 
    &__topics{
        margin-bottom: 30px;
    }
    &__additional{
-        display: block
+        display: none
    }
-//    &__additional-shown{
-//        display: block;
-//    }
+   &__additional-shown{
+       display: block;
+   }
 
    &__detailed{
 
@@ -56,6 +52,27 @@
             margin-top: 20px;
             font-size: 12px;
         }
+    }
+    
+}
+@media (min-width: 1200px) {
+  
+    .sections{
+
+        &__topics-block{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__topics{
+            margin-bottom: 56px;
+            width: 560px;
+        }
+        // &__detailed{
+        //     margin-top: 20px;
+        //     font-size: 12px;
+        // }
     }
     
 }

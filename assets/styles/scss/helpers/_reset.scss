@@ -212,17 +212,15 @@ fieldset{
             font-size: 12px;
             
         }
+        &__sublist-item{
+            margin-top: 13px;
+           
+        }
 
     }
     
 
 }
-
-@media (min-width: 768px){
-    
-
-}
-
     
 
 @media (min-width: 992px) {
@@ -230,6 +228,7 @@ fieldset{
         padding: 0 60px ;
     };
     .title-block{
+        margin-bottom: 40px;
         &__subtitle{
             font-size: 12px;
         }
@@ -266,8 +265,36 @@ fieldset{
     .container{
         padding: 0;
         width: 1140px;
-        
         margin: 0 auto;
+    }
+
+
+    .title-block{
+        &__title{
+            font-size: 36px;
+        }
+
+    }
+    .warning{
+        margin-top: 20px;
+        &__text,
+        &__list{
+            font-size: 14px;
+            line-height: 30px;
+        }
+
+    }
+    .info{
+        &__title{
+            font-size: 25px;
+            &::after{
+                width: 440px;
+            }
+        }
+        &__text{
+            font-size: 14px;
+            line-height: 30px;
+        }
     }
     
 }
