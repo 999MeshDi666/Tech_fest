@@ -1344,9 +1344,6 @@ fieldset {
 .sections__topics {
   margin-bottom: 30px;
 }
-.sections__additional {
-  display: none;
-}
 .sections__additional-shown {
   display: block;
 }

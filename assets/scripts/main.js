@@ -1,4 +1,4 @@
-
+//открытие и закрытие оверлея 
 let overlay = document.querySelector('.header__overlay');
 let showOverlay = document.querySelectorAll('.header__button');
 showOverlay.forEach((showOverlay) => { 
@@ -8,10 +8,7 @@ showOverlay.forEach((showOverlay) => {
 
 
 
-
-  
-
-
+//sticky header при скроле
 window.onscroll = function() {stickyHeader()};
 
 let header = document.querySelector('header');
@@ -28,6 +25,15 @@ function stickyHeader(){
 
 
 
+//фнукция для открытия и закрытия конпки подробностей в секциях
+
+document.addEventListener('click', (e)=>{
+  let id = e.target.dataset.toggleId;
+  // if(!id) return;
+  let details = document.getElementById(id);
+  details.classList.toggle('animate__fadeIn');
+  details.hidden = !details.hidden;
+})
 
 
 
@@ -69,16 +75,6 @@ function stickyHeader(){
 
 
 
-
-// let showOverlay = document.getElementById('show_overlay');
-// let hideOverlay = document.getElementById('hide_overlay');
-// function Overlay(show_hide, overlay){
-//     show_hide.addEventListener('click', ()=>{
-//         overlay.classList.toggle('overlay_show');
-//     });
-// };
-// Overlay(showOverlay, overlay);
-// Overlay(hideOverlay, overlay);
 
 
 
