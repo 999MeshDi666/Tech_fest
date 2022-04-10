@@ -8,6 +8,8 @@ showOverlay.forEach((showOverlay) => {
 
 
 
+
+
 //sticky header при скроле
 window.onscroll = function() {stickyHeader()};
 
@@ -15,8 +17,7 @@ let header = document.querySelector('header');
 let sticky = header.offsetTop;
 function stickyHeader(){
   if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-        
+    header.classList.add("sticky"); 
   }
   else {
     header.classList.remove("sticky");
@@ -26,7 +27,6 @@ function stickyHeader(){
 
 
 //фнукция для открытия и закрытия конпки подробностей в секциях
-
 document.addEventListener('click', (e)=>{
   let id = e.target.dataset.toggleId;
   // if(!id) return;

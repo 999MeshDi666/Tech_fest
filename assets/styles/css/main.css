@@ -425,7 +425,7 @@ fieldset {
     margin-top: 20px;
   }
   .warning__text, .warning__list {
-    font-size: 18px;
+    font-size: 12px;
     line-height: 25px;
   }
 
@@ -1343,9 +1343,6 @@ fieldset {
 }
 .sections__topics {
   margin-bottom: 30px;
-}
-.sections__additional-shown {
-  display: block;
 }
 .sections__detailed {
   margin-top: 10px;
