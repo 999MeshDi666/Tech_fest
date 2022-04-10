@@ -1389,8 +1389,20 @@ fieldset {
     width: 510px;
   }
 }
+.about {
+  padding: 50px 0 20px 0;
+}
 .about__info {
   margin-bottom: 40px;
+}
+
+@media (min-width: 992px) {
+  .about {
+    padding-top: 150px;
+  }
+  .about__info {
+    margin-bottom: 60px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
