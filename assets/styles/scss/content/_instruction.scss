@@ -1,70 +1,42 @@
-.instruction{
+.instructions{
     padding: 34px  0;
-    text-align: center;
-    &__title{
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
-    &__list{
+    &__wrapper{
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
-    &__list li{
-        background-color: #fff;
-        width: 230px;
-        height: 38px;
-        margin:  0 auto;
-        margin-bottom: 12px;
-        padding: 8px 24px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
+    &__block{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.521);
+        padding-bottom: 20px;
+        margin-bottom: 20px;
     }
-
-    &__links{
-        color: #000;
-        font-size: 10px;
+    &__title{
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    &__link{
+        font-size: 8px;
         font-weight: bold;
     }
+    &__link-img{
+        position: relative;
+        top: 4px;
+        left: 12px;
+    
+    }
+   
 }
 
 @media (min-width: 576px) {
-    .instruction{
-        &__title{
-            font-size: 30px;
-          
-        }
-        &__list li{
-            width: 320px;
-            height: 48px;
-    
-        }
-        &__links{
-            font-size: 12px;
-        }
+    .instructions{
+       
 
     }
     
 }
 
 @media (min-width: 768px) {
-    .instruction{
-        &__title{
-            font-size: 36px;
-            margin-bottom: 34px;
-        }
-        &__list li{
-            width: 360px;
-            height: 56px;
-            margin-bottom: 20px;
-    
-        }
+    .instructions{
        
-        &__links{
-            font-size: 14px;
-        }
 
     }
     
@@ -72,44 +44,18 @@
 
 @media (min-width: 992px) {
    
-    .instruction{
+    .instructions{
         padding: 64px  0;
-        &__title{
-            margin-bottom: 48px;
-        }
-        &__list li{
-            width: 480px;
-            height: 64px;
-            margin-bottom: 30px;
-        }
-       
-        &__links{
-            font-size: 18px;
-        }
+        
 
     }
     
 }
 
 @media (min-width: 1200px) {
-    .instruction{
+    .instructions{
         padding: 20px 0;
-        &__list{
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-        &__title{
-            font-size: 26px;
-            
-        }
-        &__list li{
-            width: 320px;
-            height: 64px;
-            margin-bottom: 30px;
-        }
-        &__links{
-            font-size: 14px;
-        }
+    
        
        
 
@@ -119,7 +65,7 @@
 
 
 @media (min-width: 1400px) {
-    .instruction{
+    .instructions{
     
         &__list li{
             width: 380px;
