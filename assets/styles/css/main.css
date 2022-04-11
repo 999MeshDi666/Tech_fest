@@ -1311,25 +1311,35 @@ fieldset {
 .schedule {
   padding: 34px 0;
 }
-.schedule__title {
-  margin-bottom: 10px;
-}
-.schedule__block {
+.schedule__date-block {
   margin-bottom: 20px;
 }
 .schedule__list li {
   margin-bottom: 8px;
 }
 
-@media (min-width: 1200px) {
-  .schedule__title {
-    font-size: 30px;
+@media (min-width: 768px) {
+  .schedule__date-block {
+    margin-bottom: 40px;
   }
-  .schedule__block {
-    margin-bottom: 20px;
+}
+@media (min-width: 1200px) {
+  .schedule__dates {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .schedule__date-block {
+    width: 480px;
   }
   .schedule__list li {
     font-size: 18px;
+    margin-bottom: 12px;
   }
 }
 .sections {
