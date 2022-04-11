@@ -448,7 +448,7 @@ fieldset {
   }
   .criteria__list {
     padding-left: 13px;
-    font-size: 12px;
+    font-size: 10px;
   }
   .criteria__sublist {
     padding-left: 13px;
@@ -496,6 +496,10 @@ fieldset {
   }
   .info__text {
     font-size: 14px;
+  }
+
+  .criteria__list {
+    font-size: 12px;
   }
 }
 @media (min-width: 1200px) {
@@ -922,11 +926,13 @@ fieldset {
 }
 .form__fieldset {
   margin-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.521);
 }
 .form__label {
   display: inline-block;
   margin-bottom: 7px;
   font-size: 12px;
+  font-weight: 300;
 }
 .form__item {
   padding: 9px 11px;
@@ -934,29 +940,32 @@ fieldset {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
+  background: none;
+  color: #E3E3E3;
 }
 .form__item::-webkit-input-placeholder {
   font-size: 9px;
-  color: #504D4D;
+  color: #E3E3E3;
 }
 .form__item:-ms-input-placeholder {
   font-size: 9px;
-  color: #504D4D;
+  color: #E3E3E3;
 }
 .form__item::-ms-input-placeholder {
   font-size: 9px;
-  color: #504D4D;
+  color: #E3E3E3;
 }
 .form__item::placeholder {
   font-size: 9px;
-  color: #504D4D;
+  color: #E3E3E3;
 }
-.form__add-teammate {
-  margin: 18px 0 28px 0;
-  font-size: 12px;
+.form__options {
+  color: #000;
 }
-.form__add-teammate:active {
-  color: rgba(255, 255, 255, 0.758);
+.form__submit {
+  margin-top: 40px;
+  background-color: #fff;
+  color: #000;
 }
 
 @media (min-width: 576px) {

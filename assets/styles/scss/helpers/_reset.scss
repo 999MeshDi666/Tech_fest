@@ -211,7 +211,7 @@ fieldset{
         }
         &__list{
             padding-left: 13px;
-            font-size: 12px;
+            font-size: 10px;
             
         }
         &__sublist{
@@ -278,6 +278,17 @@ fieldset{
             
         }
     }
+    .criteria{
+        
+       
+        &__list{
+  
+            font-size: 12px;
+        }
+    }
+       
+        
+
     
 }
 

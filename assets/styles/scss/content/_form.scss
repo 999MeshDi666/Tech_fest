@@ -13,34 +13,48 @@
 
     &__fieldset{
         margin-bottom: 14px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.521);
     }
 
     &__label{
         display: inline-block;
         margin-bottom: 7px;
         font-size: 12px;
+        font-weight: 300;
     }
     &__item{
         padding: 9px 11px;
         width: 100%;
         box-sizing: border-box;
         border-radius: 4px;
-        
+        background: none;
+        color: #E3E3E3;
         &::placeholder{
             font-size: 9px;
-            color:#504D4D;
+            color:#E3E3E3;
+           
         }
     }
-    &__add-teammate{
-        margin: 18px 0 28px 0;
-        font-size: 12px;
+    &__options{
+       color: #000;
 
-        &:active{
-            color: rgba(255, 255, 255, 0.758);
-        }
+    }
+    
+    &__submit{
+        margin-top: 40px;
+        background-color: $wt;
+        color: #000;
     }
     // &__show-teammate{
-    //     display: none;
+    //     // display:  block;
+    // }
+    // &__add-teammate{
+    //     margin: 18px 0 28px 0;
+    //     font-size: 12px;
+
+    //     &:active{
+    //         color: rgba(255, 255, 255, 0.758);
+    //     }
     // }
 
 }
