@@ -17,7 +17,7 @@
         font-size: 8px;
         font-weight: bold;
     }
-    &__link-img{
+    &__link-icon{
         position: relative;
         top: 4px;
         left: 12px;
@@ -28,7 +28,15 @@
 
 @media (min-width: 576px) {
     .instructions{
-       
+        &__title{
+            font-size: 18px;
+        }
+        &__link{
+            font-size: 10px;
+        }
+        &__link-icon{
+            font-size: 10px;
+        }
 
     }
     
@@ -36,6 +44,14 @@
 
 @media (min-width: 768px) {
     .instructions{
+        &__title{
+            font-size: 20px;
+        }
+        &__block{
+            margin-bottom: 40px;
+           
+        }
+        
        
 
     }
@@ -43,10 +59,29 @@
 }
 
 @media (min-width: 992px) {
-   
     .instructions{
         padding: 64px  0;
-        
+        &__wrapper{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__list{
+            margin: 100px 0 0 80px;
+        }
+        &__block{
+           width: 380px;
+        }
+        &__title{
+            font-size: 25px;
+        }
+        &__link{
+            font-size: 12px;
+        }
+        &__link-icon{
+            font-size: 12px;
+        }
+      
 
     }
     
@@ -55,8 +90,10 @@
 @media (min-width: 1200px) {
     .instructions{
         padding: 20px 0;
+        &__block{
+            width: 520px;
+        }
     
-       
        
 
     }
@@ -67,12 +104,14 @@
 @media (min-width: 1400px) {
     .instructions{
     
-        &__list li{
-            width: 380px;
-            
+        &__block{
+            width: 640px;
         }
-        &__links{
-            font-size: 16px;
+        &__link{
+            font-size: 14px;
+        }
+        &__link-icon{
+            font-size: 14px;
         }
        
 

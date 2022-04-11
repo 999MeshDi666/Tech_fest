@@ -1232,28 +1232,80 @@ fieldset {
   font-size: 8px;
   font-weight: bold;
 }
-.instructions__link-img {
+.instructions__link-icon {
   position: relative;
   top: 4px;
   left: 12px;
 }
 
+@media (min-width: 576px) {
+  .instructions__title {
+    font-size: 18px;
+  }
+  .instructions__link {
+    font-size: 10px;
+  }
+  .instructions__link-icon {
+    font-size: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .instructions__title {
+    font-size: 20px;
+  }
+  .instructions__block {
+    margin-bottom: 40px;
+  }
+}
 @media (min-width: 992px) {
   .instructions {
     padding: 64px  0;
+  }
+  .instructions__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .instructions__list {
+    margin: 100px 0 0 80px;
+  }
+  .instructions__block {
+    width: 380px;
+  }
+  .instructions__title {
+    font-size: 25px;
+  }
+  .instructions__link {
+    font-size: 12px;
+  }
+  .instructions__link-icon {
+    font-size: 12px;
   }
 }
 @media (min-width: 1200px) {
   .instructions {
     padding: 20px 0;
   }
+  .instructions__block {
+    width: 520px;
+  }
 }
 @media (min-width: 1400px) {
-  .instructions__list li {
-    width: 380px;
+  .instructions__block {
+    width: 640px;
   }
-  .instructions__links {
-    font-size: 16px;
+  .instructions__link {
+    font-size: 14px;
+  }
+  .instructions__link-icon {
+    font-size: 14px;
   }
 }
 .schedule {
