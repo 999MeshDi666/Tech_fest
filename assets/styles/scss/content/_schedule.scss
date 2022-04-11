@@ -20,6 +20,9 @@
 }
 @media (min-width: 768px) {
     .schedule{
+        &__title{
+            font-size: 25px;
+        }
         &__date-block{
             margin-bottom: 40px;
         }
