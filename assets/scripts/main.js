@@ -3,7 +3,10 @@ let overlay = document.querySelector('.header__overlay');
 let showOverlay = document.querySelectorAll('.header__button');
 showOverlay.forEach((showOverlay) => { 
     showOverlay.addEventListener('click' ,()=>{
-        overlay.classList.toggle('overlay_show')});
+        overlay.classList.toggle('overlay_show');
+        document.body.classList.toggle('off_scroll');
+      });
+
 });
 
 

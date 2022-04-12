@@ -21,8 +21,6 @@ div,
 span,
 fieldset{
     @include reset_spaces();
-    
-   
 }
 
 body{
@@ -30,6 +28,9 @@ body{
     background-color: $bc;
     color: $wt;
     font-family: $mnsrt, Arial, Helvetica, sans-serif;
+}
+.off_scroll{
+    overflow: hidden;
 }
 ul,li{
     list-style-type: none;
